@@ -1,34 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <Style>
-        .kont
-        {
-            width: auto;
-            height: auto;
-        }
-    </Style>
-    <title>Daftar Akun Bahari Store</title>
-</head>
-<body>
-    <h3>Daftar Akun Bahari Store</h3>
-    <form action="<?php echo base_url()."index.php/Welcome/aksi_daftar"; ?>" method="POST">
-    <table>
-        <tr>
-            <td>Username </td> <td>: <input type="text" name="user"></td>
-        </tr>
-        <tr>
-            <td>Password </td> <td>: <input type="password" name="pass"></td>
-        </tr>
-        <tr>
-        <td><input type="submit"></td><td><input type="reset"></td>
-        </tr>
-    </table>
-    </form>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -38,16 +7,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daftar Akun Bahari Store</title>
+  <title>Bahari Store</title>
   <style>
-      /* .container-fluid
-      {
-          border: 1px solid black;
-      } */
-      .col-lg-6
-      {
-          margin: auto;
-      }
       .col-sm-6_1
       {
         border: 1px solid silver;
@@ -57,6 +18,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         border-bottom-right-radius: 5px;
         width: 180px;
         height: 40px;
+      }
+      .col-lg-6
+      {
+          margin: auto;
       }
   </style>
 
@@ -179,30 +144,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
           <!-- /.col-md-6 -->
           <div class="col-lg-6">
-            <center><div class="card card-primary card-outline">
+            <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="m-0"><center>Daftar Akun Bahari Store</center></h5>
+                <h5 class="m-0"><center>Selamat Datang</center></h5>
               </div>
               <div class="card-body">
-                <form action="<?php echo base_url()."index.php/Welcome/aksi_daftar"; ?>" method="POST">
-                <table>
-                    <tr>
-                        <td>Username </td> <td> <input class="form-control" type="text" name="user"></td>
-                    </tr>
-                    <tr>
-                        <td>Password </td> <td><input class="form-control" type="password" name="pass"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td><input class="btn btn-primary" type="submit"><input style="margin-left:63px;" class="btn btn-secondary" type="reset"></td>
-                    </tr>
-                    <!-- <a href="#" class="btn btn-primary">Daftar</a> -->
-                </table>
-                </form>
+                <p class="card-text">Bahari Store menyediakan alat-alat bantu bagi para pelayan dan 
+                    pemancing untuk kebutuhan mencari ikan. Tersedia banyak item yang dapat ditemukan 
+                    seperti mata pancing, umpan, jaring, senar, dan masih banyak yang dapat anda temukan.
+                </p>
+                <p class="card-text">
+                    Untuk dapat memulai, anda bisa mendaftar atau masuk sebagai pelanggan terdaftar.
+                </p>
+                <center>
+                <a href="<?php echo base_url()."index.php/Welcome/buka_login"; ?>" class="btn btn-primary">Login</a>
+                <a style="margin-left:100px;" href="<?php echo base_url()."index.php/Welcome/daftar"; ?>" class="btn btn-primary">Daftar</a>
+                </center>
               </div>
-            </div></center>
+            </div>
           </div>
           <!-- /.col-md-6 -->
         </div>

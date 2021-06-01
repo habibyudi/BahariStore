@@ -39,6 +39,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bahari Store</title>
+  <style>
+          .col-lg-6
+      {
+          margin: auto;
+      }
+      .col-sm-6_1
+      {
+        border: 1px solid silver;
+        margin-top: -16px;
+        background-color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 180px;
+        height: 40px;
+      }
+  </style>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -58,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -128,7 +144,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <strong><i>P | </i></strong>
               <p>
                 Profil
               </p>
@@ -146,13 +162,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-sm-6_1">
             <h1 class="m-0"><center>Bahari Store</center></h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -166,28 +177,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-lg-6">
             <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="m-0"><center>Selamat Datang</center></h5>
+              <center><h5 class="m-0">Selamat Datang</center></h5>
               </div>
-              <div class="card-body">
-                <form action="<?php echo base_url()."index.php/Welcome/aksi_login"; ?>" method="POST">
+              <center><div class="card-body">
+                <form id="my-form" action="<?php echo base_url()."index.php/Welcome/aksi_login"; ?>" method="POST">
                 <table>
                     <tr>
-                        <td>Username </td> <td>: <input type="text" name="user"></td>
+                        <td>Username</td><td><input class="form-control" type="text" name="user"></td>
                     </tr>
                     <tr>
-                        <td>Password </td> <td>: <input type="password" name="pass"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit"></td><td><input type="reset"></td>
+                        <td>Password</td><td><input class="form-control" type="password" name="pass"></td>
                     </tr>
                 </table>
-                </form>
-                <a href="#" class="btn btn-primary">Login</a>
+                </form></center>
+                <button type="submit" class="btn btn-primary" form="my-form">Login</button>
+                <button type="reset" class="btn btn-secondary" form="my-form">Reset</button>
               </div>
             </div>
-          </div>
           <!-- /.col-md-6 -->
-        </div>
+          </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>

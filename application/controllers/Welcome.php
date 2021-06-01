@@ -11,6 +11,11 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('dashboard');
+	}
+
+	public function buka_login()
+	{
 		$this->load->view('form_login');
 	}
 
