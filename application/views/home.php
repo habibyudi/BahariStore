@@ -43,7 +43,7 @@
                         <td>NO</td>
                         <td>Nama</td>
                         <td>Jenis Kelamin</td>
-                        <td>Almaat</td>
+                        <td>Alamat</td>
                         <td>Aksi</td>
                 </tr>
             <tbody>
