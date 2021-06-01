@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Jun 2021 pada 04.25
+-- Waktu pembuatan: 01 Jun 2021 pada 10.32
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -33,6 +33,19 @@ CREATE TABLE `db_pelanggan` (
   `pass` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pelanggan`
+--
+
+CREATE TABLE `pelanggan` (
+  `no` int(2) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `jk` varchar(18) NOT NULL,
+  `alamat` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -44,6 +57,12 @@ ALTER TABLE `db_pelanggan`
   ADD PRIMARY KEY (`no`);
 
 --
+-- Indeks untuk tabel `pelanggan`
+--
+ALTER TABLE `pelanggan`
+  ADD PRIMARY KEY (`no`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -52,6 +71,12 @@ ALTER TABLE `db_pelanggan`
 --
 ALTER TABLE `db_pelanggan`
   MODIFY `no` int(9) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `pelanggan`
+--
+ALTER TABLE `pelanggan`
+  MODIFY `no` int(2) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
