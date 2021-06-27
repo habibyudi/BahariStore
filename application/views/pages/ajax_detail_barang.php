@@ -4,7 +4,7 @@ if(isset($detail_barang)){
         ?>
 
         <div class="row-fluid">
-            <div class="span6">
+            <div class="span6 ">
                 <div class="control-group">
                     <label class="control-label">Kode Barang</label>
                     <div class="controls">

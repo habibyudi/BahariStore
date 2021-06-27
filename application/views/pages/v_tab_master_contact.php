@@ -1,9 +1,20 @@
+<html lang="en">
+<head>
+    <style>
+        .lab {
+			style=font-weight: bold;
+            color:white ;
+            font-family:Rockwell, Imapct, Monospace;
+		}
+    </style>
+</head>
+<body>
 <?php if(isset($data_contact)){
 foreach ($data_contact as $row){
 ?>
 
-<form class="form-horizontal" method="post" action="<?php echo site_url('master/edit_contact')?>">
-    <div class="control-group">
+<form class="form-horizontal lab" method="post" action="<?php echo site_url('master/edit_contact')?>">
+    <div class="control-group ">
         <label class="control-label">Nama Perusahaan</label>
         <div class="controls">
             <input class="input-block-level" name="nama" type="text" value="<?php echo $row->nama?>" required maxlength="30" readonly>
@@ -63,3 +74,5 @@ foreach ($data_contact as $row){
 <?php }
 }
 ?>
+</body>
+</html>

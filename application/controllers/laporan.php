@@ -1,3 +1,14 @@
+<html lang="en">
+<head>
+    <style>
+        body {
+			background-image: url("foto/foto1.jpg");
+			background-repeat: no-repeat;
+   			background-size:cover
+		}
+    </style>
+</head>
+<body>
 <?php
 class Laporan extends CI_Controller{
     function __construct(){
@@ -40,3 +51,6 @@ class Laporan extends CI_Controller{
         $this->load->view('pages/v_result_laporan',$data);
     }
 }
+?>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <table class="table table-bordered table-striped">
     <thead>
-    <tr>
+    <tr style="background-color: white;">
         <th>No</th>
         <th>Kode Pegawai</th>
         <th>User ID</th>
@@ -24,7 +24,7 @@
     if(isset($data_pegawai)){
         foreach($data_pegawai as $row){
             ?>
-            <tr>
+            <tr style="background-color: white;">
                 <td><?php echo $no++; ?></td>
                 <td><?php echo $row->kd_pegawai; ?></td>
                 <td><?php echo $row->username; ?></td>

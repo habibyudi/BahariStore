@@ -1,6 +1,17 @@
 <!--========================= Content Wrapper ==============================-->
+<html lang="en">
+<head>
+    <style>
+        body {
+			background-image: url("foto/foto1.jpg");
+			background-repeat: no-repeat;
+   			background-size:cover
+		}
+    </style>
+</head>
+<body>
 <div class="container">
-    <h1 class="text-info" style="text-align: center">Sistem Aplikasi Bahari Store</h1>
+    <h1 class="text-info" style="text-align: center;font-weight: bold;color:white;font-family:Rockwell, Imapct, Monospace;">Selamat Datang di Toko Kami</h1>
     <br/>
 <?php if(isset($dt_contact)){
 foreach($dt_contact as $row){
@@ -16,5 +27,7 @@ foreach($dt_contact as $row){
 }
 ?>
 </div>
+</body>
+</html>
 
 

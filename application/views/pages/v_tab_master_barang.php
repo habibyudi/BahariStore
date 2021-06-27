@@ -1,6 +1,6 @@
 <table class="table table-bordered table-striped">
     <thead>
-    <tr>
+    <tr style="background-color: white;">
         <th>No</th>
         <th>Kode Barang</th>
         <th>Nama Barang</th>
@@ -20,7 +20,7 @@
     if(isset($data_barang)){
     foreach($data_barang as $row){
     ?>
-    <tr>
+    <tr style="background-color: white;">
         <td><?php echo $no++; ?></td>
         <td><?php echo $row->kd_barang; ?></td>
         <td><?php echo $row->nm_barang; ?></td>

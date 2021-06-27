@@ -1,3 +1,12 @@
+<style type="text/css">
+   #p{
+   color: #ff00ff;
+   font-size: 20px;
+   font-weight: bold;
+   font-family:Rockwell, Calibri, Monospace;
+   font-style : oblique; }
+
+ </style>
 <script type="text/javascript">
     $(function(){
         $("#btnCari").click(function() {
@@ -22,7 +31,7 @@
     });
 </script>
 
-<h3 style="text-align: center">
+<h3 style="text-align: center; font-size:30px;font-weight: bold;color:white;font-family:Rockwell, Imapct, Monospace;">
     Lihat Laporan Penjualan Berdasarkan Tanggal Yang DiPilih
 </h3>
 <div class="container-fluid">
@@ -42,13 +51,13 @@
         <div id="laporanPage">
             <form class="form-horizontal" method="post" action="<?= site_url('laporan/cari')?>">
                 <div class="control-group">
-                    <label class="control-label" for="start_date">Tanggal Awal</label>
+                    <label class="control-label" for="start_date" style="font-weight: bold;color:white;font-family:Rockwell, Imapct, Monospace;" >Tanggal Awal</label>
                     <div class="controls">
                         <input type="date" id="tgl_awal" name="start_date">
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="end_date">Tanggal Akhir</label>
+                    <label class="control-label" for="end_date" style="font-weight: bold;color:white;font-family:Rockwell, Imapct, Monospace;">Tanggal Akhir</label>
                     <div class="controls">
                         <input type="date" id="tgl_akhir" name="end_date">
                     </div>

@@ -1,6 +1,6 @@
 <table class="table table-bordered table-striped">
     <thead>
-    <tr>
+    <tr style="background-color: white;">
         <th>No</th>
         <th>Tanggal</th>
         <th>Kode Penjualan</th>
@@ -21,7 +21,7 @@
                 <td><?php echo $row->nm_pelanggan; ?></td>
                 <td><?php echo currency_format($row->total_harga); ?></td>
             </tr>
-            <tr>
+            <tr style="background-color:grey;"    >
                 <td colspan="4" style="text-align: center; background: #49afcd"><strong>Total Seluruh Penjualan</strong></td>
                 <td><?= currency_format($row->total_all)?></td>
             </tr>

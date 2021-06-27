@@ -1,3 +1,14 @@
+<html lang="en">
+<head>
+    <style>
+        body {
+			background-image: url("foto/foto1.jpg");
+			background-repeat: no-repeat;
+   			background-size:cover
+		}
+    </style>
+</head>
+<body>
 <?php
 class Master extends CI_Controller{
     function __construct(){
@@ -127,5 +138,7 @@ class Master extends CI_Controller{
         redirect("master");
     } 
 }
-
+?>
+</body>
+</html>
 

@@ -1,7 +1,7 @@
 <!--================ Content Wrapper===========================================-->
 <table class="table table-bordered table-striped">
     <thead>
-    <tr>
+    <tr style="background-color: white;">
         <th>No</th>
         <th>Tanggal</th>
         <th>Kode Penjualan</th>

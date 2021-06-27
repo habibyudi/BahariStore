@@ -56,6 +56,11 @@
         .text-center{
             text-align: center;
         }
+        body {
+			background-image: url("foto/foto1.jpg");
+			background-repeat: no-repeat;
+   			background-size:cover
+		}
     </style>
 
     <!-- Fav icon -->
@@ -67,7 +72,7 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container" background="foto/foto1.jpg">
 
     <div class="loading navbar-fixed-top" style="display: none">
         <div class="progress progress-primary progress-striped active">
@@ -77,7 +82,7 @@
     <br>
     <form class="form-signin" action="<?= site_url('login/cek_login')?>" method="post">
         <hr>
-        <h4 class="form-signin-heading text-center">Sistem Aplikasi Toko</h4>
+        <h4 class="form-signin-heading text-center">BAHARI STORE</h4>
 
             <!-- NOTIF -->
             <?php
@@ -87,13 +92,15 @@
             }?>
 
         <hr>
+        <h5 class="form-signin-heading text-center">Log-in</h5>
         <input type="text" class="input-block-level" placeholder="Username" name="username" required="">
         <input type="password" class="input-block-level" placeholder="Password" name="password" required="">
         <button class="btn btn-large" type="submit">Sign in</button>
+        <button class="btn btn-large" type="reset">Reset</button>
     </form>
     <hr>
     <div class="footer">
-        <p>&copy; Created By : <a href="#" target="_blank"><strong>Sumber Mulia</strong></a></p>
+        <p>&copy; Created By : <a href="#" target="_blank"><strong>Bahari Store</strong></a></p>
     </div>
 </div>
 </body>

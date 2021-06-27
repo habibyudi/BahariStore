@@ -1,3 +1,14 @@
+<html lang="en">
+<head>
+    <style>
+        body {
+			background-image: url("foto/foto1.jpg");
+			background-repeat: no-repeat;
+   			background-size:cover
+		}
+    </style>
+</head>
+<body>
 <?php
 class Penjualan extends CI_Controller{
     function __construct(){
@@ -158,3 +169,6 @@ class Penjualan extends CI_Controller{
         redirect('penjualan');
     }
 }
+?>
+</body>
+</html>
