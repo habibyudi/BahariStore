@@ -1,7 +1,0 @@
-database baru::
-
-1. buat database dengan nama crud_db
-2. buat dua tabel, pertama pelanggan, kedua db_pelanggan
-tabel pelanggan, strukturnya "no" int(2) AUTO INCREMENT, "nama" varchar(30), "jk" varchar(18), "alamat" varchar(40)
-tabel db_pelanggan, strukturnya "no" int(9) AUTO INCREMENT, "user" varchar(20), "pass" varchar(128)
-OK
